@@ -26,7 +26,7 @@ contextBridge.exposeInMainWorld('titlebar', {
 // Dark Mode
 contextBridge.exposeInMainWorld('theme', {
     toggle: _ => ipcRenderer.invoke('theme:toggle'),
-    default: (theme) => theme == 'dark' ? ipcRenderer.invoke('theme:dark') : ipcRenderer.invoke('theme:light')
+    default: (theme = null) => theme == 'dark' ? ipcRenderer.invoke('theme:dark') : ipcRenderer.invoke('theme:light')
 })
 
 // Utils
