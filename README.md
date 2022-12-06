@@ -1,5 +1,12 @@
 # ElectronJS Template App
 
+#### What is ElectronJS
+
+[Electron] is a [framework] for building desktop applications using [JavaScript], [HTML], and [CSS]. By embedding [Chromium] and [Node.js] into its binary, [Electron] allows you to maintain one [JavaScript] codebase and create [cross-platform apps] that work on [Windows], [MacOS], and [Linux] — no native development experience required.
+
+---
+
+
 Clone and run this repository for a quick demonstration of Electron with a custom titlebar and few utilites just for you.
 This is a minimal Electron application based on the [Quick Start Guide] within the Electron documentation but with some tweaks that you might find quite pleasing.
 A basic Electron application needs just these files:
@@ -23,7 +30,7 @@ You can learn more about each of these components in depth within the official [
 >   > Get user's current OS using `window.informations.os()`
 >   - Application's Name
 >   > Get application's name using `window.informations.appName()`<br>
->       > Configure if you want the name to be formatted in the *.env*
+>       • Configure if you want the name to be formatted in the *.env*
 >   - Application's Description
 >   > Get application's description using `window.informations.appDescription()`
 > - Titlebar
@@ -135,6 +142,17 @@ In the same terminal run this: `npm run start` and enjoy. 🎉
 
 
 <!-- Variables -->
+[Electron]: https://www.electronjs.org/
+[framework]: https://www.codecademy.com/resources/blog/what-is-a-framework/
+[JavaScript]: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript
+[HTML]: https://www.hostinger.com/tutorials/what-is-html
+[CSS]: https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS
+[Chromium]: https://www.chromium.org/
+[Node.js]: https://nodejs.org/
+[cross-platform apps]: https://en.wikipedia.org/wiki/Cross-platform_software
+[Windows]: https://www.computerhope.com/jargon/w/windows.htm
+[MacOS]: https://www.techtarget.com/whatis/definition/Mac-OS
+[Linux]: https://www.linux.com/what-is-linux/
 [Quick Start Guide]: https://electronjs.org/docs/latest/tutorial/quick-start
 [Tutorial]: https://www.electronjs.org/docs/latest/tutorial/tutorial-prerequisites
 [Git]: https://git-scm.com/
