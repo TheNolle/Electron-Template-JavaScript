@@ -1,0 +1,28 @@
+span[themeToggler] {
+    display: grid;
+    cursor: pointer;
+    place-items: center;
+    grid-area: themeToggler;
+    color: var(--themeToggler);
+    -webkit-app-region: no-drag;
+}
+span[themeToggler]:hover {color: var(--themeTogglerHover)}
+span[themeToggler]> svg {height: .8rem}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color: #fefefe;
+        --background: #1a1a1ae6;
+        --themeToggler: #2397fe;
+        --themeTogglerHover: #0072d7;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --color: #1a1a1a;
+        --background: #fefefecc;
+        --themeToggler: #feb923;
+        --themeTogglerHover: #d79400;
+    }
+}

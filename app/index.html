@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' data: https: http:;">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self' 'unsafe-inline' data: https: http:;">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/libs/font.awesome.pro.min.js"></script>
+</head>
+
+<body>
+    <nav titlebar draggable>
+        <div buttons>
+            <div>
+                <button close title="close">
+                    <svg viewBox="0 0 6.4 6.4"><polygon points="6.4,0.8 5.6,0 3.2,2.4 0.8,0 0,0.8 2.4,3.2 0,5.6 0.8,6.4 3.2,4 5.6,6.4 6.4,5.6 4,3.2"></polygon></svg>
+                </button>
+                <button minimize title="minimize">
+                    <svg viewBox="0 0 8 1.1"><rect width="8" height="1.1"></rect></svg>
+                </button>
+                <button fullscreen title="maximize">
+                    <svg fullscreen viewBox="0 0 6 5.9">
+                        <path d="M5.4,0h-4L6,4.5V0.6C5.7,0.6,5.3,0.3,5.4,0z"></path>
+                        <path d="M0.6,5.9h4L0,1.4l0,3.9C0.3,5.3,0.6,5.6,0.6,5.9z"></path>
+                    </svg>
+                    <svg maximize viewBox="0 0 7.9 7.9">
+                        <polygon points="7.9,4.5 7.9,3.4 4.5,3.4 4.5,0 3.4,0 3.4,3.4 0,3.4 0,4.5 3.4,4.5 3.4,7.9 4.5,7.9 4.5,4.5"></polygon>
+                    </svg>
+                </button>
+            </div>
+            <span themeToggler></span>
+        </div>
+        <span pageName></span>
+    </nav>
+</body>
+
+<script src="assets/js/index.js" type="module"></script>
+
+</html>

@@ -1,0 +1,136 @@
+/* Variables */
+:root {
+    --titlebar-height: 1.5rem;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --titlebar-color: #fefefe;
+        --titlebar-background: #1a1a1ae6;
+        --titlebar-button-hover: #fefefe50;
+    }
+}
+@media (prefers-color-scheme: light) {
+    :root {
+        --titlebar-color: #1a1a1a;
+        --titlebar-background: #fefefee6;
+        --titlebar-button-hover: #1a1a1a50;
+    }
+}
+
+nav[titlebar] {
+    display: grid;
+    overflow: hidden;
+    padding: 0 .25rem;
+    user-select: none;
+    position: relative;
+    align-items: center;
+    align-content: center;
+    justify-content: start;
+    grid-auto-flow: column;
+    fill: var(--titlebar-color);
+    color: var(--titlebar-color);
+    height: var(--titlebar-height);
+    background-color: var(--titlebar-background);
+}
+
+/* Drag */
+nav[titlebar][draggable] {-webkit-app-region: drag}
+nav[titlebar]> div[buttons]> div> button {-webkit-app-region: no-drag}
+
+/* Buttons Div */
+nav[titlebar]> div[buttons] {
+    z-index: 1;
+    display: grid;
+    column-gap: 1rem;
+    grid-area: buttons;
+    grid-auto-flow: column;
+    justify-content: start;
+}
+nav[titlebar]> div[buttons]> div {
+    display: grid;
+    column-gap: .3rem;
+    margin-left: .5rem;
+    place-items: center;
+    grid-auto-flow: column;
+}
+
+/* Buttons */
+nav[titlebar]> div[buttons]> div> button {
+    padding: 0;
+    outline: none;
+    display: grid;
+    width: .75rem;
+    height: .75rem;
+    cursor: pointer;
+    border-radius: 50%;
+    place-items: center;
+}
+
+/* Close Button */
+nav[titlebar]> div[buttons]> div> button[close] {
+    border: none;
+    grid-area: close;
+    background-color: #ff5f57;
+}
+nav[titlebar]> div[buttons]> div> button[close]:is(:active, :focus-visible, :hover) {background-color: #bf4943}
+
+/* Minimize Button */
+nav[titlebar]> div[buttons]> div> button[minimize] {
+    border: none;
+    grid-area: minimize;
+    background-color: #ffbd2e;
+}
+nav[titlebar]> div[buttons]> div> button[minimize]:is(:active, :focus-visible, :hover) {background-color: #bf9123}
+
+/* Maximize|Fullscreen Button */
+nav[titlebar]> div[buttons]> div> button[maximize],
+nav[titlebar]> div[buttons]> div> button[fullscreen] {
+    border: none;
+    grid-area: maximize;
+    background-color: #28c940;
+}
+nav[titlebar]> div[buttons]> div> button[maximize]:is(:active, :focus-visible, :hover),
+nav[titlebar]> div[buttons]> div> button[fullscreen]:is(:active, :focus-visible, :hover) {background-color: #1f9a31}
+
+/* SVGs */
+nav[titlebar]> div[buttons]> div> button> svg {
+    opacity: 0;
+    width: .4rem;
+    height: .4rem;
+}
+nav[titlebar]> div[buttons]> div> button:hover> svg {opacity: 1}
+nav[titlebar]> div[buttons]> div> button[fullscreen]> svg[maximize] {display: none}
+nav[titlebar]> div[buttons]> div> button[maximize]> svg[fullscreen] {display: none}
+
+/* Page Name */
+nav[titlebar]> span[pageName] {
+    width: 100%;
+    font-weight: 500;
+    position: absolute;
+    text-align: center;
+}
+
+/* OS */
+/* None, Aix, Android, MacOS, SunOS */
+nav[titlebar]:is([os=Aix], [os=Android], [os=MacOS], [os=SunOS]) {
+    fill: black;
+    justify-content: start;
+}
+nav[titlebar]> div[buttons], nav[titlebar]:is([os=Aix], [os=Android], [os=MacOS], [os=SunOS])> div[buttons] {grid-template-areas: "buttons themeToggler"}
+nav[titlebar]> div[buttons]> div, nav[titlebar]:is([os=Aix], [os=Android], [os=MacOS], [os=SunOS])> div[buttons]> div {grid-template-areas: "close maximize minimize"}
+/* FreeBSD, Linux, OpenBSD, Windows */
+nav[titlebar]:is([os=FreeBSD], [os=Linux], [os=OpenBSD], [os=Windows]) {justify-content: end}
+nav[titlebar]:is([os=FreeBSD], [os=Linux], [os=OpenBSD], [os=Windows])> div[buttons] {grid-template-areas: "themeToggler buttons"}
+nav[titlebar]:is([os=FreeBSD], [os=Linux], [os=OpenBSD], [os=Windows])> div[buttons]> div {
+    column-gap: 0;
+    grid-template-areas: "minimize maximize close";
+}
+nav[titlebar]:is([os=FreeBSD], [os=Linux], [os=OpenBSD], [os=Windows])> div[buttons]> div> button {
+    border-radius: 0;
+    background-color: unset;
+    width: var(--titlebar-height);
+    height: var(--titlebar-height);
+}
+nav[titlebar]:is([os=FreeBSD], [os=Linux], [os=OpenBSD], [os=Windows])> div[buttons]> div> button:is(:active, :focus-visible, :hover) {background-color: var(--titlebar-button-hover)}
+nav[titlebar]:is([os=FreeBSD], [os=Linux], [os=OpenBSD], [os=Windows])> div[buttons]> div> button[close]:is(:active, :focus-visible, :hover) {background-color: #ff5f57}
+nav[titlebar]:is([os=FreeBSD], [os=Linux], [os=OpenBSD], [os=Windows])> div[buttons]> div> button> svg {opacity: 1}

@@ -1,0 +1,19 @@
+@import url(utils/roboto.css);
+@import url(utils/titlebar.css);
+@import url(utils/theme.css);
+
+:root {
+    --font: 'Roboto', sans-serif;
+}
+
+*[hidden] {display: none}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    color: var(--color);
+    font-family: var(--font);
+    background-color: var(--background);
+}

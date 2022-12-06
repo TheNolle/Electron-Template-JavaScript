@@ -1,0 +1,25 @@
+{
+  "author": "Nolly#0001",
+  "bugs": {
+    "url": "https://github.com/TheNolle/ElectronJS-Template-App/issues"
+  },
+  "dependencies": {
+    "dotenv-defaults": "^5.0.2"
+  },
+  "description": "",
+  "devDependencies": {
+    "electron": "^22.0.0"
+  },
+  "homepage": "https://github.com/TheNolle/ElectronJS-Template-App#readme",
+  "license": "MIT",
+  "main": "index.js",
+  "name": "electronjs-template-app",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheNolle/ElectronJS-Template-App.git"
+  },
+  "scripts": {
+    "start": "electron ."
+  },
+  "version": "1.0.0"
+}
