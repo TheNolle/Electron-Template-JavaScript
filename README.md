@@ -22,7 +22,7 @@ You can learn more about each of these components in depth within the official [
 >   - Current OS
 >   > Get user's current OS using `window.informations.os()`
 >   - Application's Name
->   > Get application's name using `window.informations.appName()`
+>   > Get application's name using `window.informations.appName()`<br>
 >       > Configure if you want the name to be formatted in the *.env*
 >   - Application's Description
 >   > Get application's description using `window.informations.appDescription()`
