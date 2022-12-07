@@ -6,7 +6,7 @@
   "dependencies": {
     "dotenv-defaults": "^5.0.2"
   },
-  "description": "",
+  "description": "Template app for all my future ElectronJS apps (and maybe for yours too?).",
   "devDependencies": {
     "electron": "^22.0.0"
   },
