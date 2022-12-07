@@ -9,7 +9,8 @@
 
 ### Samples:
 1. [NoCpuMonitor]: See your CPU cores' timings in real-time with mutiple measurements.
-2. [NoSleep]: Having troubles sleeping lately? Need to relax a bit and exteriorise some stress? Join us on this journey !
+2. [NoSleep]: Having troubles sleeping lately? Need to relax a bit and exteriorise some stress? Join us on this journey!
+3. [NoHashing]: Hash any string into many possible algorithms and get informations about each of them easily.
 
 
 ---
@@ -185,4 +186,5 @@ In the same terminal run this: `npm run start` and enjoy. 🎉
   [MIT]: LICENSE
   [NoCpuMonitor]: https://github.com/TheNolle/NoCpuMonitor
   [NoSleep]: https://github.com/TheNolle/NoSleep
+  [NoHashing]: https://github.com/thenolle/NoHashing
 <!-- /Variables -->
