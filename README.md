@@ -7,6 +7,14 @@
 ---
 
 
+### Samples:
+1. [NoCpuMonitor]: See your CPU cores' timings in real-time with mutiple measurements.
+2. [NoSleep]: Having troubles sleeping lately? Need to relax a bit and exteriorise some stress? Join us on this journey !
+
+
+---
+
+
 Clone and run this repository for a quick demonstration of Electron with a custom titlebar and few utilites just for you.
 This is a minimal Electron application based on the [Quick Start Guide] within the Electron documentation but with some tweaks that you might find quite pleasing.
 A basic Electron application needs just these files:
@@ -142,36 +150,39 @@ In the same terminal run this: `npm run start` and enjoy. 🎉
 
 
 <!-- Variables -->
-[Electron]: https://www.electronjs.org/
-[framework]: https://www.codecademy.com/resources/blog/what-is-a-framework/
-[JavaScript]: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript
-[HTML]: https://www.hostinger.com/tutorials/what-is-html
-[CSS]: https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS
-[Chromium]: https://www.chromium.org/
-[Node.js]: https://nodejs.org/
-[cross-platform apps]: https://en.wikipedia.org/wiki/Cross-platform_software
-[Windows]: https://www.computerhope.com/jargon/w/windows.htm
-[MacOS]: https://www.techtarget.com/whatis/definition/Mac-OS
-[Linux]: https://www.linux.com/what-is-linux/
-[Quick Start Guide]: https://electronjs.org/docs/latest/tutorial/quick-start
-[Tutorial]: https://www.electronjs.org/docs/latest/tutorial/tutorial-prerequisites
-[Git]: https://git-scm.com/
-[Git (Windows)]: https://git-scm.com/download/win/
-[Git (MacOS)]: https://git-scm.com/download/mac/
-[Git (Linux)]: https://git-scm.com/download/linux/
-[Terminal (Windows)]: https://www.wikihow.com/Open-Terminal-in-Windows
-[Terminal (MacOS)]: https://www.howtogeek.com/682770/how-to-open-the-terminal-on-a-mac/
-[Terminal (Linux)]: https://www.geeksforgeeks.org/how-to-open-terminal-in-linux/
-[Terminal]: /
-[see this guide]: https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/
-[NodeJS]: https://nodejs.org/en/download/current/
-[Node Version Manager (Windows)]: https://github.com/coreybutler/nvm-windows/#installation--upgrades
-[Node Version Manager (Linux)]: https://github.com/nvm-sh/nvm#installing-and-updating
-[npm]: http://npmjs.com/
-[Github Desktop]: (https://desktop.github.com/)
-[Github Desktop Guide]: (https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop)
-[Visual Studio]: (https://visualstudio.microsoft.com/)
-[Visual Studio Guide]: (https://learn.microsoft.com/en-us/visualstudio/version-control/git-clone-repository)
-[Electron Documenttation]: https://electronjs.org/docs/
-[Electron Fiddle]: https://electronjs.org/fiddle
-[MIT]: LICENSE
+  [Electron]: https://www.electronjs.org/
+  [framework]: https://www.codecademy.com/resources/blog/what-is-a-framework/
+  [JavaScript]: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript
+  [HTML]: https://www.hostinger.com/tutorials/what-is-html
+  [CSS]: https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS
+  [Chromium]: https://www.chromium.org/
+  [Node.js]: https://nodejs.org/
+  [cross-platform apps]: https://en.wikipedia.org/wiki/Cross-platform_software
+  [Windows]: https://www.computerhope.com/jargon/w/windows.htm
+  [MacOS]: https://www.techtarget.com/whatis/definition/Mac-OS
+  [Linux]: https://www.linux.com/what-is-linux/
+  [Quick Start Guide]: https://electronjs.org/docs/latest/tutorial/quick-start
+  [Tutorial]: https://www.electronjs.org/docs/latest/tutorial/tutorial-prerequisites
+  [Git]: https://git-scm.com/
+  [Git (Windows)]: https://git-scm.com/download/win/
+  [Git (MacOS)]: https://git-scm.com/download/mac/
+  [Git (Linux)]: https://git-scm.com/download/linux/
+  [Terminal (Windows)]: https://www.wikihow.com/Open-Terminal-in-Windows
+  [Terminal (MacOS)]: https://www.howtogeek.com/682770/how-to-open-the-terminal-on-a-mac/
+  [Terminal (Linux)]: https://www.geeksforgeeks.org/how-to-open-terminal-in-linux/
+  [Terminal]: /
+  [see this guide]: https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/
+  [NodeJS]: https://nodejs.org/en/download/current/
+  [Node Version Manager (Windows)]: https://github.com/coreybutler/nvm-windows/#installation--upgrades
+  [Node Version Manager (Linux)]: https://github.com/nvm-sh/nvm#installing-and-updating
+  [npm]: http://npmjs.com/
+  [Github Desktop]: (https://desktop.github.com/)
+  [Github Desktop Guide]: (https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop)
+  [Visual Studio]: (https://visualstudio.microsoft.com/)
+  [Visual Studio Guide]: (https://learn.microsoft.com/en-us/visualstudio/version-control/git-clone-repository)
+  [Electron Documenttation]: https://electronjs.org/docs/
+  [Electron Fiddle]: https://electronjs.org/fiddle
+  [MIT]: LICENSE
+  [NoCpuMonitor]: https://github.com/TheNolle/NoCpuMonitor
+  [NoSleep]: https://github.com/TheNolle/NoSleep
+<!-- /Variables -->
