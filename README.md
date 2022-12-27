@@ -1,4 +1,4 @@
-# ElectronJS Template App
+# ElectronJS App Template
 
 #### What is ElectronJS
 
