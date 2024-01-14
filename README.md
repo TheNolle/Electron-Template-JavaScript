@@ -9,14 +9,6 @@
 ### Preview
 ![Preview](preview.png)
 
----
-
-
-### Samples:
-1. [NoCpuMonitor]: See your CPU cores' timings in real-time with mutiple measurements.
-2. [NoHashing]: Hash any string into many possible algorithms and get informations about each of them easily.
-3. [NoFinance]: Get real-time finance data from [stooq].
-
 
 ---
 
@@ -202,7 +194,4 @@ Stay connected and follow me on these platforms:
   [Electron Fiddle]: https://electronjs.org/fiddle
   [MIT]: LICENSE
   [stooq]: https://stooq.com/
-  [NoCpuMonitor]: https://github.com/TheNolle/NoCpuMonitor
-  [NoHashing]: https://github.com/thenolle/NoHashing
-  [NoFinance]: https://github.com/TheNolle/NoFinance
 <!-- /Variables -->
